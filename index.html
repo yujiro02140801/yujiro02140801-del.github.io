@@ -21,19 +21,59 @@
   <!-- OGP -->
   <meta property="og:title" content="Wedding Photo Gallery">
   <meta property="og:description" content="Our happiest memories.">
- <!-- <meta property="og:image" content="https://koha0923128-del.github.io/wedding-gallery/images/ogp.png">-->
+  <!-- <meta property="og:image" content="https://koha0923128-del.github.io/wedding-gallery/images/ogp.png"> -->
   <meta property="og:url" content="https://yujiro02140801.github.io/yujiro02140801-del.github.io//wedding-gallery/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Yujiro & Marin Wedding">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    /* 準備中デザイン */
+    .preparing-wrapper {
+      width: 100%;
+      padding: 80px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #faf7f2;
+      border: 1px solid #e8e2da;
+      border-radius: 12px;
+      margin-top: 40px;
+    }
+
+    .preparing-inner {
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .preparing-icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      animation: gentle-bounce 2.5s ease-in-out infinite;
+    }
+
+    .preparing-message {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #6a5e55;
+      font-family: 'Noto Serif JP', serif;
+    }
+
+    @keyframes gentle-bounce {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
 </head>
+
 <body>
   <main class="gallery-page">
 
     <!-- Cinderella -->
-    <section class="photo-gallery fade-section" id="cinderella">
+    <section class="photo-gallery fade-section preparing" id="cinderella">
       <div class="gallery-header">
         <h2 class="gallery-title">Wedding Photo Gallery</h2>
 
@@ -43,8 +83,23 @@
         </div>
       </div>
 
+      <!-- ▼▼▼ ここから準備中デザイン ▼▼▼ -->
+      <div class="preparing-wrapper">
+        <div class="preparing-inner">
+          <div class="preparing-icon">💍</div>
+          <p class="preparing-message">
+            写真の準備を進めています。<br>
+            準備が整い次第、こちらに公開いたします。<br>
+            しばらくお待ちください。
+          </p>
+        </div>
+      </div>
+      <!-- ▲▲▲ ここまで準備中デザイン ▲▲▲ -->
+
+      <!-- ▼▼▼ 元の画像はすべてコメントアウト ▼▼▼ -->
+
+      <!--
       <div class="gallery-row gallery-row-wide infinite-carousel" role="region" aria-label="FMH wide photo carousel">
-        <!--
         <img src="images/最も打ち込んンだ活動写真_関西学院大学_中野真梨.jpg" alt="FMH wide 1" class="gallery-image">
         <img src="images/marin.jpg" alt="FMH wide 2" class="gallery-image">
         <img src="images/cinderella-wide-03.jpg" alt="FMH wide 3" class="gallery-image">
@@ -58,18 +113,18 @@
         <img src="images/cinderella-wide-11.jpg" alt="FMH wide 11" class="gallery-image">
         <img src="images/cinderella-wide-12.jpg" alt="FMH wide 12" class="gallery-image">
         <img src="images/cinderella-wide-13.jpg" alt="FMH wide 13" class="gallery-image">
-        -->
-        <p class="gallery-placeholder">準備が整い次第表示します。しばらくおまちください。</p>
       </div>
 
-      <!--
       <div class="gallery-row gallery-row-tall infinite-carousel" role="region" aria-label="FMH tall photo carousel">
         <img src="images/cinderella-tall-01.jpg" alt="FMH tall 1" class="gallery-image">
         <img src="images/cinderella-tall-02.jpg" alt="FMH tall 2" class="gallery-image">
         <img src="images/cinderella-tall-03.jpg" alt="FMH tall 3" class="gallery-image">
         <img src="images/cinderella-tall-04.jpg" alt="FMH tall 4" class="gallery-image">
       </div>
-    -->
+      -->
+
+      <!-- ▲▲▲ コメントアウトここまで ▲▲▲ -->
+
     </section>
 
   </main>
