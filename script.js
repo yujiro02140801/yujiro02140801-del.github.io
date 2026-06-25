@@ -57,11 +57,17 @@ function setupFadeIn() {
       });
     },
     {
-      threshold: 0.15,
+      threshold: 0.1,
     }
   );
 
-  sections.forEach((section) => observer.observe(section));
+  sections.forEach((section) => {
+    observer.observe(section);
+    // セクションが最初からビューポート内にある場合は即座にis-visibleを付与
+    if (section.getBoundingClientRect().top < window.innerHeight) {
+      section.classList.add("is-visible");
+    }
+  });
 }
 
 function setupLightbox() {
